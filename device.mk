@@ -43,6 +43,9 @@ PRODUCT_COPY_FILES += \
 # Dolby Support
 TARGET_USES_MIUI_DOLBY := true
 
+# Miui Camera
+$(call inherit-product-if-exists, vendor/xiaomi/munch-miuicamera/products/miuicamera.mk)
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
