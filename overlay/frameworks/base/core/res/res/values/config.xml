@@ -340,10 +340,10 @@
         Note that this value should *not* reflect the maximum brightness value for any high
         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
         This array should be equal in size to config_screenBrightnessBacklight -->
-    <integer-array name="config_screenBrightnessNits">
-        <item>5</item>
-        <item>1000</item>
-    </integer-array>
+    <array name="config_screenBrightnessNits">
+        <item>4.5</item>
+        <item>1000.0</item>
+    </array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
         percent. The length of this array is assumed to be one greater than
@@ -460,10 +460,9 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -23,52
-        M 23,52
-        A 23,23 0 1,0 -23,52
-        A 23,23 0 1,0 23,52
+        M 24 53 
+        A 24 24 0 1 0 -24 53 
+        A 24 24 0 1 0 24 53
         Z
     </string>
 
@@ -475,9 +474,9 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
         M 0,0
-        H -23
-        V 75
-        H 23
+        H -25
+        V 77
+        H 25
         V 0
         H 0
         Z
