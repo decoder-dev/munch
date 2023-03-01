@@ -34,6 +34,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
 # Camera
+$(call inherit-product-if-exists, device/xiaomi/munch-miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
     libpiex_shim
 
