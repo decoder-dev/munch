@@ -31,6 +31,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
+# Miui Camera
+$(call inherit-product-if-exists, vendor/xiaomi/alioth-miuicamera/products/miuicamera.mk)
+
 # Dolby Support
 TARGET_USES_MIUI_DOLBY := true
 
