@@ -10,38 +10,6 @@ TARGET_IS_VAB := true
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
-<<<<<<< HEAD
-=======
-# AAPT
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
-# Audio configs
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-
-# Camera
-PRODUCT_PACKAGES += \
-    libpiex_shim
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
-
-# Miui Camera
-$(call inherit-product-if-exists, vendor/xiaomi/alioth-miuicamera/products/miuicamera.mk)
-
-# Dolby Support
-TARGET_USES_MIUI_DOLBY := true
-
-# Dolby Config File
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dolby/config/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
-
->>>>>>> 6e44d2f (Alioth: Ship camera config in tree)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -60,6 +28,10 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
 # Camera
 PRODUCT_PACKAGES += \
