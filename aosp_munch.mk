@@ -25,7 +25,7 @@ TARGET_SUPPORTS_QUICK_TAP  := true
 
 # VoidUI Maintainer Flags
 VOID_MAINTAINER := decoder
-CUSTOM_BUILD_TYPE := BETA
+CUSTOM_BUILD_TYPE := RELEASE
 
 
 PRODUCT_NAME := aosp_munch
