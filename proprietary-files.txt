@@ -335,10 +335,7 @@ vendor/etc/camera/model_front.dlc
 vendor/etc/camera/reid_float.dlc
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/seg_quantized.dlc
-<<<<<<< HEAD
-=======
 vendor/etc/camera/sr_params.xml
->>>>>>> 6e44d2f (Alioth: Ship camera config in tree)
 vendor/etc/camera/vidhance_calibration
 
 # Camera features
