@@ -64,3 +64,6 @@ sys.haptic.ignoreWhenCamera=true
 
 # TouchFeature
 ro.vendor.touchfeature.type=43
+
+# Zygote
+zygote.critical_window.minute=10
