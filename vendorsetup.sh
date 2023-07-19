@@ -13,3 +13,4 @@ rm -vf out/target/product/munch/obj/PACKAGING/system_build_prop_intermediates/bu
 
 git clone --depth=1 https://gitlab.com/jjpprrrr/prelude-clang.git prebuilts/clang/host/linux-x86/clang-prelude
 git clone https://gitlab.com/NotZeetaa/aosp-clang-17.0.0 prebuilts/clang/host/linux-x86/clang-lastest
+git clone https://github.com/VoidUI-Devices/kernel_xiaomi_sm8250.git kernel/xiaomi/munch1

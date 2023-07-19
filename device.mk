@@ -54,6 +54,14 @@ TARGET_USES_MIUI_DOLBY := true
 # Miui Camera
 $(call inherit-product-if-exists, vendor/xiaomi/munch-miuicamera/products/miuicamera.mk)
 
+# Camera Extensions
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.camerax.extensions.enabled=true
+
+# Camera Extensions permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/camerax-vendor-extensions.xml
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)

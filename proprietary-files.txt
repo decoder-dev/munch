@@ -276,6 +276,9 @@ vendor/lib64/camera/components/com.xiaomi.node.tracker.so
 vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/lib64/camera/components/libubifocus.so
 
+# Camera Extensions
+system_ext/framework/camerax-vendor-extensions.jar
+
 # Camera-configs
 vendor/etc/camera/mibokeh_855_opencl.bin
 vendor/etc/camera/mibokeh_855_parameter.bin

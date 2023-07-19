@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_munch.mk
+    $(LOCAL_DIR)/evolution_munch.mk
 
 COMMON_LUNCH_CHOICES := \
-    $(foreach variant, user userdebug eng, aosp_munch-$(variant))
+    $(foreach variant, user userdebug eng, evolution_munch-$(variant))
